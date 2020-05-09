@@ -5,10 +5,10 @@ metadata:
   name: json-server-test-ingress
   namespace: default
   annotations:
-    kubernetes.io/ingress.class: traefik
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: status.discoos.io
+  - host: json.server
     http:
       paths:
       - path: /
